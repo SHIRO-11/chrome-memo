@@ -1,0 +1,15 @@
+{
+    "name": "MEMO-MEMO",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "拡張機能でメモするだけのアプリ",
+    "content_scripts": [{
+      "matches": ["https://*/*"],
+      "css": ["style.css"]
+    }],
+    "permissions": ["storage"],
+    "action": {
+        "default_title": "MEMO-MEMO",
+        "default_popup": "./html/popup.html"
+      }
+  }
